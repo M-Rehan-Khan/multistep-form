@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multi step Form</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div class="main">
+            
+            <form class="form1">
+                <h2 style="color: rgb(255, 247, 0);">Registration Form</h2>
+                <input type="email" placeholder="Email" autofocus required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required >
+
+                <div class="btns">
+                    <button type="button" onclick="form1ToSecond()">Next</button>
+                </div>
+            </form>
+
+            <form class="form2">
+                <h2 style="color: yellow;">Personal Information</h2>
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name" required>
+                <input type="text" placeholder="Phone no...." required>
+
+                <div class="btns">
+                    <button type="button" onclick="form2ToFirst()">Prev</button>
+                    <button type="button" onclick="form2ToThird()">Next</button>
+                </div>
+            </form>
+
+            <form class="form3">
+                <h2 style="color: yellow;">Social Accounts</h2>
+                <input type="text" placeholder="Linkedin id" required>
+                <input type="text" placeholder="Github" required>
+                <input type="text" placeholder="Upwork" required>
+
+                <div class="btns">
+                    <button type="button" onclick="form3ToSecond()">Prev</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+            <div class="progress">
+                <div class="progressBar"></div>
+                <div>Step 1</div>
+                <div>Step 2</div>
+                <div>Step 3</div>
+            </div>
+            
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+
+    </html>
